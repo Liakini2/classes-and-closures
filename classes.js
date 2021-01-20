@@ -113,7 +113,6 @@ class ProgressiveManager extends Manager{
   promotion(){
     let newTitle = 'Not a manager'
     let newReports = this.reports.length
-    console.log(newReports)
     if(newReports >= 1 && newReports <= 3){
       newTitle = 'Barely Manager'
     } else if(newReports >= 4 && newReports <= 10){
@@ -125,7 +124,6 @@ class ProgressiveManager extends Manager{
     }else if(newReports >= 101){
       newTitle = 'Bestest Manager'
     }
-    console.log(newTitle)
     return newTitle
   }
 }
